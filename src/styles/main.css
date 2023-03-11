@@ -1,0 +1,16 @@
+@import url("./variables.css");
+
+.app-bg {
+  background-color: rgb(17 24 39/1);
+  min-height: 100vh;
+  min-width: 100%;
+  z-index: -2;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.fw-bolder {
+  font-weight: bolder;
+}

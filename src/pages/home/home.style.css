@@ -1,0 +1,23 @@
+
+.card-bg {
+    border-radius: 0.5rem;
+    border: 1px solid rgb(255 255 255/0.1);
+    background-color: rgb(0 0 0/0.3);
+    backdrop-filter: blur(16px);
+}
+
+.nasa-img {
+    width: 300px;
+    height: 350px;
+    object-fit: contain;
+    border-bottom: 1px solid #5d5d5d;
+}
+
+.date-pill {
+    position: absolute;
+    top: 0.5%;
+    right: 0.5%;
+    background-color:#232741;
+    padding: 5px;
+    border-radius: 0.5rem;
+}
