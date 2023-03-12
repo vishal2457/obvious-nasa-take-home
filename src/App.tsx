@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="app-bg">
       <Route component={Home} path="/" />
-      <Route component={ApodDetail} path="/detail/:id" />
+      <Route component={ApodDetail} path="/detail" />
     </div>
   );
 }

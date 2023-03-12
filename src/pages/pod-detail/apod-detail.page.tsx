@@ -1,19 +1,23 @@
-import { useLocation, useRoute } from "wouter";
-import EyeIcon from "../../assets/eye.png";
+import { useLocation } from "wouter";
 import BackIcon from "../../assets/back.png";
+import EyeIcon from "../../assets/eye.png";
 import { Image } from "../../components/image.component";
 import { Text } from "../../components/text.component";
 import { nasaApodStore } from "../../store/nasa-apod.store";
-import "./pod-detail.style.css";
 import { Explanation } from "./components/explanation.component";
+import "./pod-detail.style.css";
 
 export const ApodDetail = () => {
-  const [_, params] = useRoute("/detail/:id");
   const [__, navigate] = useLocation();
   
-  const pod = nasaApodStore((state) =>
-    state.getDetail(decodeURI(params?.id || ""))
-  );
+  const pod = nasaApodStore((state) => {
+    const urlSearchParams = new URLSearchParams(window.location.search);
+   const title = Object.fromEntries(urlSearchParams).title;
+     
+   return state.getDetail(decodeURI(title || ""))
+  });
+
+  
 
 
   return (
