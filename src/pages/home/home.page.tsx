@@ -18,12 +18,13 @@ export const Home = () => {
   
 
   useEffect(() => {
-    fetchPods();
+    if(!pods.length) {
+      fetchPods();
+    }
   }, [])
   
   return (
     <div className="container">
-      {/* <Gradient /> */}
       <div className="d-flex justify-content-center align-items-center py-5">
       <Text variant="heading">Nasa Apod</Text>
       </div>

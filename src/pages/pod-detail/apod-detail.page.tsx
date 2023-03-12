@@ -5,6 +5,7 @@ import { Image } from "../../components/image.component";
 import { Text } from "../../components/text.component";
 import { nasaApodStore } from "../../store/nasa-apod.store";
 import "./pod-detail.style.css";
+import { Explanation } from "./components/explanation.component";
 
 export const ApodDetail = () => {
   const [_, params] = useRoute("/detail/:id");
@@ -27,12 +28,7 @@ export const ApodDetail = () => {
         </Text>
         <Text>{pod?.date}</Text>
       </div>
-      <div
-        className="position-absolute w-75 bottom-0 explanation"
-        style={{ right: 0 }}
-      >
-        <Text variant="helper">{pod?.explanation}</Text>
-      </div>
+      <Explanation exp={pod?.explanation || ''} />
      
       <a href={pod?.hdurl} target="_blank">
         <div 
