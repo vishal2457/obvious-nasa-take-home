@@ -12,9 +12,10 @@ Project submitted by vishal acharya.
 - I could have written better modular css classes.
 - I would create error boundries for unexpected error handling.
 - Would create suspense for lazy loading component.
-- Would have enforced linting rules based on the team i am working with.
+- Would have enforced linting rules, commit hooks etc based on the team i am working with.
 - Would have created stories for complex components so it could be tested in an isolated environment.
 - Structured design tokens in a better way to keep the design consistency.
+- Would have used more matured router for routing.
 
 ## Folder structure
 ```
