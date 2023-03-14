@@ -38,6 +38,20 @@ Project submitted by vishal acharya.
 - atomic design priciples should be used if building a shared ui lib.
 
 
+### Run project
+```
+pnpm install
+```
+
+- start dev server
+```pnpm dev```
+
+- build for production
+```pnpm build```
+
+- preview build
+```pnpm preview```
+
 ## vercel app 
 
 [Live Demo](https://obvious-nasa-take-home.vercel.app/)
